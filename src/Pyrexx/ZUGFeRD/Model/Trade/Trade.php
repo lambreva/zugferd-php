@@ -8,38 +8,36 @@ use JMS\Serializer\Annotation\XmlList;
 
 class Trade
 {
+    /**
+     * @var LineItem[]
+     * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem>")
+     * @XmlList(inline = true, entry = "IncludedSupplyChainTradeLineItem", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     */
+    private $lineItems = array();
 
     /**
      * @var Agreement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Agreement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("ApplicableSupplyChainTradeAgreement")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("ApplicableHeaderTradeAgreement")
      */
     private $agreement;
 
     /**
      * @var Delivery
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Delivery")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("ApplicableSupplyChainTradeDelivery")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("ApplicableHeaderTradeDelivery")
      */
     private $delivery;
 
     /**
      * @var Settlement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Settlement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("ApplicableSupplyChainTradeSettlement")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("ApplicableHeaderTradeSettlement")
      */
     private $settlement;
-
-    /**
-     * @var LineItem[]
-     * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem>")
-     * @XmlList(inline = true, entry = "IncludedSupplyChainTradeLineItem", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     */
-    private $lineItems = array();
-
 
     public function __construct()
     {

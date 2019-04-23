@@ -10,7 +10,7 @@ class TaxRegistration
     /**
      * @var Registration
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Tax\Registration")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ID")
      */
     private $registration;

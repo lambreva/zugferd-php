@@ -11,7 +11,7 @@ class Header
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ID")
      */
     private $id = '';
@@ -19,15 +19,7 @@ class Header
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("Name")
-     */
-    private $name = '';
-
-    /**
-     * @var string
-     * @Type("string")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("TypeCode")
      */
     private $typeCode = DocumentType::COMMERCIAL_INVOICE;
@@ -35,7 +27,7 @@ class Header
     /**
      * @var Date
      * @Type("Pyrexx\ZUGFeRD\Model\Date")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("IssueDateTime")
      */
     private $date;
@@ -43,7 +35,7 @@ class Header
     /**
      * @var Note[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Note>")
-     * @XmlList(inline = true, entry = "IncludedNote", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlList(inline = true, entry = "IncludedNote", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $notes = array();
 

@@ -14,7 +14,7 @@ class AllowanceCharge
     /**
      * @var Indicator
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Indicator")
-     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("ChargeIndicator")
      */
     private $indicator;
@@ -22,7 +22,7 @@ class AllowanceCharge
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("ActualAmount")
      */
     private $actualAmount;

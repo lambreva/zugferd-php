@@ -10,7 +10,7 @@ class Price
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("ChargeAmount")
      */
     private $amount;
@@ -18,7 +18,7 @@ class Price
     /**
      * @var AllowanceCharge[]
      * @JMS\Type("array<Pyrexx\ZUGFeRD\Model\AllowanceCharge>")
-     * @JMS\XmlList(inline = true, entry = "AppliedTradeAllowanceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlList(inline = true, entry = "AppliedTradeAllowanceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $allowanceCharges = array();
 
@@ -68,4 +68,6 @@ class Price
         $this->allowanceCharges[] = $allowanceCharge;
         return $this;
     }
+
+
 }

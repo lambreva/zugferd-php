@@ -12,7 +12,7 @@ class Indicator
     /**
      * @var boolean
      * @JMS\Type("boolean")
-     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:15")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100")
      * @JMS\SerializedName("Indicator")
      */
     private $indicator;

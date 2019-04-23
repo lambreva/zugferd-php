@@ -9,13 +9,14 @@ class DocumentContext
     /**
      * @var \Pyrexx\ZUGFeRD\Model\ContextParameterID
      * @Type("Pyrexx\ZUGFeRD\Model\ContextParameterID")
-     * @XmlElement(namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("GuidelineSpecifiedDocumentContextParameter")
      */
     private $type;
 
     public function __construct($type)
     {
-        $this->type = new ContextParameterID('urn:ferd:CrossIndustryDocument:invoice:1p0:' . strtolower($type));
+        //todo: check type
+        $this->type = new ContextParameterID('urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100:' . strtolower($type));
     }
 }

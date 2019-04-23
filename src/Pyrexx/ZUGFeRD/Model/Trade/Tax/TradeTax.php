@@ -11,7 +11,7 @@ class TradeTax
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("CalculatedAmount")
      */
     private $calculatedAmount;
@@ -19,7 +19,7 @@ class TradeTax
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("TypeCode")
      */
     private $code = '';
@@ -27,26 +27,26 @@ class TradeTax
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("BasisAmount")
      */
     private $basisAmount;
 
     /**
-     * @var double
-     * @JMS\Type("double")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @JMS\SerializedName("ApplicablePercent")
-     */
-    private $percent;
-
-    /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("CategoryCode")
      */
     private $category;
+
+    /**
+     * @var double
+     * @JMS\Type("double")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\SerializedName("RateApplicablePercent")
+     */
+    private $percent;
 
     /**
      * @return \Pyrexx\ZUGFeRD\Model\Trade\Amount
@@ -99,22 +99,6 @@ class TradeTax
     /**
      * @return string
      */
-    public function getPercent()
-    {
-        return $this->percent;
-    }
-
-    /**
-     * @param string $percent
-     */
-    public function setPercent($percent)
-    {
-        $this->percent = str_replace(',', '', number_format($percent, 2));
-    }
-
-    /**
-     * @return string
-     */
     public function getCategory()
     {
         return $this->category;
@@ -128,4 +112,19 @@ class TradeTax
         $this->category = $category;
     }
 
+    /**
+     * @return string
+     */
+    public function getPercent()
+    {
+        return $this->percent;
+    }
+
+    /**
+     * @param string $percent
+     */
+    public function setPercent($percent)
+    {
+        $this->percent = str_replace(',', '', number_format($percent, 2));
+    }
 }

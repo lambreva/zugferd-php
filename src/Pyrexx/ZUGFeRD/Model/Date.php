@@ -10,7 +10,7 @@ class Date
     /**
      * @var DateTime
      * @Type("Pyrexx\ZUGFeRD\Model\DateTime")
-     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:15")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100")
      * @SerializedName("DateTimeString")
      */
     private $date;

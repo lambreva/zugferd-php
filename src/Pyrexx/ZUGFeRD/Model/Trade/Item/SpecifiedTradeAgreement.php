@@ -10,7 +10,7 @@ class SpecifiedTradeAgreement
     /**
      * @var Price
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Price")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("GrossPriceProductTradePrice")
      */
     private $grossPrice;
@@ -18,7 +18,7 @@ class SpecifiedTradeAgreement
     /**
      * @var Price
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Price")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("NetPriceProductTradePrice")
      */
     private $netPrice;

@@ -7,11 +7,10 @@ use JMS\Serializer\Annotation as JMS;
 
 class PaymentTerms
 {
-
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("Description")
      */
     private $description;
@@ -19,7 +18,7 @@ class PaymentTerms
     /**
      * @var Date
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Date")
-     * @JMS\XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @JMS\XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("DueDateDateTime")
      */
     private $dueDate;
@@ -27,7 +26,7 @@ class PaymentTerms
     /**
      * PaymentTerms constructor.
      *
-     * @param string                       $description
+     * @param string                     $description
      * @param \Pyrexx\ZUGFeRD\Model\Date $dueDate
      */
     public function __construct($description, Date $dueDate)
@@ -67,5 +66,4 @@ class PaymentTerms
     {
         $this->dueDate = $dueDate;
     }
-
 }

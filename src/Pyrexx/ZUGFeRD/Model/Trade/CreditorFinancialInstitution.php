@@ -6,49 +6,24 @@ use JMS\Serializer\Annotation\XmlElement;
 
 class CreditorFinancialInstitution
 {
-
     /**
      * BIC (Bank Cdentifier Code) of a credit institution.
      *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BICID")
      */
     private $bic;
 
     /**
-     * The german 'Bankleitzahl'.
-     *
-     * @var string
-     * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("GermanBankleitzahlID")
-     */
-    private $germanBLZ;
-
-    /**
-     * Name of the credit institution.
-     *
-     * @var string
-     * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("Name")
-     */
-    private $name;
-
-    /**
      * CreditorFinancialInstitution constructor.
      *
      * @param string $bic
-     * @param string $germanBLZ
-     * @param string $name
      */
-    public function __construct($bic, $germanBLZ, $name)
+    public function __construct($bic)
     {
         $this->bic = $bic;
-        $this->germanBLZ = $germanBLZ;
-        $this->name = $name;
     }
 
     /**
@@ -66,37 +41,4 @@ class CreditorFinancialInstitution
     {
         $this->bic = $bic;
     }
-
-    /**
-     * @return string
-     */
-    public function getGermanBLZ()
-    {
-        return $this->germanBLZ;
-    }
-
-    /**
-     * @param string $germanBLZ
-     */
-    public function setGermanBLZ($germanBLZ)
-    {
-        $this->germanBLZ = $germanBLZ;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-    }
-
 }

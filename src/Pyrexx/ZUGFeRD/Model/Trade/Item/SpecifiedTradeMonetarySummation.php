@@ -11,7 +11,7 @@ class SpecifiedTradeMonetarySummation
     /**
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("LineTotalAmount")
      */
     private $totalAmount;

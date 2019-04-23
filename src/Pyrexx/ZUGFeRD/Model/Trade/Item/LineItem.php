@@ -6,46 +6,45 @@ use JMS\Serializer\Annotation\XmlElement;
 
 class LineItem
 {
-
     /**
      * @var LineDocument
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\LineDocument")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("AssociatedDocumentLineDocument")
      */
     private $lineDocument;
 
     /**
+     * @var Product
+     * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Product")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("SpecifiedTradeProduct")
+     */
+    private $product;
+
+    /**
      * @var SpecifiedTradeAgreement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\SpecifiedTradeAgreement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("SpecifiedSupplyChainTradeAgreement")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("SpecifiedLineTradeAgreement")
      */
     private $tradeAgreement;
 
     /**
      * @var SpecifiedTradeDelivery
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\SpecifiedTradeDelivery")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("SpecifiedSupplyChainTradeDelivery")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("SpecifiedLineTradeDelivery")
      */
     private $delivery;
 
     /**
      * @var SpecifiedTradeSettlement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\SpecifiedTradeSettlement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("SpecifiedSupplyChainTradeSettlement")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("SpecifiedLineTradeSettlement")
      */
     private $settlement;
-
-    /**
-     * @var Product
-     * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Product")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
-     * @SerializedName("SpecifiedTradeProduct")
-     */
-    private $product;
 
     /**
      * @return \Pyrexx\ZUGFeRD\Model\Trade\Item\LineDocument
@@ -63,6 +62,25 @@ class LineItem
     public function setLineDocument(LineDocument $lineDocument)
     {
         $this->lineDocument = $lineDocument;
+        return $this;
+    }
+
+    /**
+     * @return \Pyrexx\ZUGFeRD\Model\Trade\Item\Product
+     */
+    public function getProduct()
+    {
+        return $this->product;
+    }
+
+    /**
+     * @param \Pyrexx\ZUGFeRD\Model\Trade\Item\Product $product
+     *
+     * @return self
+     */
+    public function setProduct(Product $product)
+    {
+        $this->product = $product;
         return $this;
     }
 
@@ -122,24 +140,4 @@ class LineItem
         $this->settlement = $settlement;
         return $this;
     }
-
-    /**
-     * @return \Pyrexx\ZUGFeRD\Model\Trade\Item\Product
-     */
-    public function getProduct()
-    {
-        return $this->product;
-    }
-
-    /**
-     * @param \Pyrexx\ZUGFeRD\Model\Trade\Item\Product $product
-     *
-     * @return self
-     */
-    public function setProduct(Product $product)
-    {
-        $this->product = $product;
-        return $this;
-    }
-
 }

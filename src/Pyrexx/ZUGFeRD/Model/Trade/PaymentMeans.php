@@ -10,7 +10,7 @@ class PaymentMeans
      *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("TypeCode")
      */
     private $code = '';
@@ -19,7 +19,7 @@ class PaymentMeans
      *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("Information")
      */
     private $information = '';
@@ -28,17 +28,16 @@ class PaymentMeans
      *
      * @var CreditorFinancialAccount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\CreditorFinancialAccount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PayeePartyCreditorFinancialAccount")
      */
     private $payeeAccount;
-
 
     /**
      *
      * @var CreditorFinancialInstitution
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\CreditorFinancialInstitution")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PayeeSpecifiedCreditorFinancialInstitution")
      */
     private $payeeInstitution;

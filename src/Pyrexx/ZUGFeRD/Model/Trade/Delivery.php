@@ -10,7 +10,7 @@ class Delivery
     /**
      * @var DeliveryChainEvent
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\DeliveryChainEvent")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ActualDeliverySupplyChainEvent")
      */
     private $chainEvent;

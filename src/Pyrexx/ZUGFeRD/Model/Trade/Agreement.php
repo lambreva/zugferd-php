@@ -10,7 +10,7 @@ class Agreement
     /**
      * @var TradeParty
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\TradeParty")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("SellerTradeParty")
      */
     private $seller;
@@ -18,7 +18,7 @@ class Agreement
     /**
      * @var TradeParty
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\TradeParty")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BuyerTradeParty")
      */
     private $buyer;

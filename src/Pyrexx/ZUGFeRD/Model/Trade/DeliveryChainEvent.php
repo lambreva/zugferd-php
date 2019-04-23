@@ -11,7 +11,7 @@ class DeliveryChainEvent
     /**
      * @var Date
      * @Type("Pyrexx\ZUGFeRD\Model\Date")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("OccurrenceDateTime")
      */
     private $date;

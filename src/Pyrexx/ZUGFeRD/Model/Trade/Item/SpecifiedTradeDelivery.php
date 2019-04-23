@@ -10,7 +10,7 @@ class SpecifiedTradeDelivery
     /**
      * @var Quantity
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Quantity")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BilledQuantity")
      */
     private $billedQuantity;
