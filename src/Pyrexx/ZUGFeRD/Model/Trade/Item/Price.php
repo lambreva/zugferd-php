@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use Pyrexx\ZUGFeRD\CodeList\Currency;
 use Pyrexx\ZUGFeRD\Model\AllowanceCharge;
@@ -20,7 +22,7 @@ class Price
      * @JMS\Type("array<Pyrexx\ZUGFeRD\Model\AllowanceCharge>")
      * @JMS\XmlList(inline = true, entry = "AppliedTradeAllowanceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
-    private $allowanceCharges = array();
+    private $allowanceCharges = [];
 
     /**
      * GrossPrice constructor.
@@ -66,8 +68,7 @@ class Price
     public function addAllowanceCharge(AllowanceCharge $allowanceCharge)
     {
         $this->allowanceCharges[] = $allowanceCharge;
+
         return $this;
     }
-
-
 }

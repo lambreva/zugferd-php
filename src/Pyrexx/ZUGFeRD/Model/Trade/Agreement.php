@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -6,7 +8,6 @@ use JMS\Serializer\Annotation\XmlElement;
 
 class Agreement
 {
-
     /**
      * @var TradeParty
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\TradeParty")
@@ -39,6 +40,7 @@ class Agreement
     public function setSeller($seller)
     {
         $this->seller = $seller;
+
         return $this;
     }
 
@@ -58,8 +60,7 @@ class Agreement
     public function setBuyer($buyer)
     {
         $this->buyer = $buyer;
+
         return $this;
     }
-
-
 }

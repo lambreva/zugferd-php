@@ -1,4 +1,5 @@
 <?php
+
 namespace Pyrexx\ZUGFeRD\Helper;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
@@ -14,7 +15,6 @@ class AnnotationRegistryHelper
      */
     public static function registerAutoloadNamespace()
     {
-
         static $already_called = false;
 
         if ($already_called) {

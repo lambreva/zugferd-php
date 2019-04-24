@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use Pyrexx\ZUGFeRD\CodeList\Currency;
 use Pyrexx\ZUGFeRD\Model\Trade\Amount;

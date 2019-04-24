@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;

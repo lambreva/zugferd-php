@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -6,7 +8,6 @@ use JMS\Serializer\Annotation\XmlElement;
 
 class SpecifiedTradeDelivery
 {
-
     /**
      * @var Quantity
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Quantity")
@@ -40,5 +41,4 @@ class SpecifiedTradeDelivery
     {
         $this->billedQuantity = $billedQuantity;
     }
-
 }

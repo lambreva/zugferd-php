@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -37,7 +39,7 @@ class Header
      * @Type("array<Pyrexx\ZUGFeRD\Model\Note>")
      * @XmlList(inline = true, entry = "IncludedNote", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
-    private $notes = array();
+    private $notes = [];
 
     /**
      * @return string
@@ -55,25 +57,7 @@ class Header
     public function setId($id)
     {
         $this->id = (string)$id;
-        return $this;
-    }
 
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     *
-     * @return self
-     */
-    public function setName($name)
-    {
-        $this->name = (string)$name;
         return $this;
     }
 
@@ -93,6 +77,7 @@ class Header
     public function setTypeCode($typeCode)
     {
         $this->typeCode = (string)$typeCode;
+
         return $this;
     }
 
@@ -104,6 +89,7 @@ class Header
     public function addNote(Note $note)
     {
         $this->notes[] = $note;
+
         return $this;
     }
 

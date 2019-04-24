@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade;
 
 use Pyrexx\ZUGFeRD\CodeList\Currency;
 use Pyrexx\ZUGFeRD\Model\Trade\Tax\TradeTax;
@@ -42,7 +44,7 @@ class Settlement
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Tax\TradeTax>")
      * @XmlList(inline = true, entry = "ApplicableTradeTax", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
-    private $tradeTaxes = array();
+    private $tradeTaxes = [];
 
     /**
      * @var MonetarySummation
@@ -89,6 +91,7 @@ class Settlement
     public function setPaymentReference($paymentReference)
     {
         $this->paymentReference = $paymentReference;
+
         return $this;
     }
 
@@ -108,6 +111,7 @@ class Settlement
     public function setCurrency($currency)
     {
         $this->currency = $currency;
+
         return $this;
     }
 
@@ -127,6 +131,7 @@ class Settlement
     public function setPaymentMeans(PaymentMeans $paymentMeans)
     {
         $this->paymentMeans = $paymentMeans;
+
         return $this;
     }
 
@@ -146,6 +151,7 @@ class Settlement
     public function addTradeTax(TradeTax $tradeTax)
     {
         $this->tradeTaxes[] = $tradeTax;
+
         return $this;
     }
 
@@ -165,6 +171,7 @@ class Settlement
     public function setMonetarySummation($monetarySummation)
     {
         $this->monetarySummation = $monetarySummation;
+
         return $this;
     }
 
@@ -184,6 +191,7 @@ class Settlement
     public function setPaymentTerms($paymentTerms)
     {
         $this->paymentTerms = $paymentTerms;
+
         return $this;
     }
 }

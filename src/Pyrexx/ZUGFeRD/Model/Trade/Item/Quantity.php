@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -7,7 +9,6 @@ use JMS\Serializer\Annotation\XmlValue;
 
 class Quantity
 {
-
     /**
      * @var string
      * @Type("string")
@@ -66,5 +67,4 @@ class Quantity
     {
         $this->value = str_replace(',', '', number_format($value, 4));
     }
-
 }

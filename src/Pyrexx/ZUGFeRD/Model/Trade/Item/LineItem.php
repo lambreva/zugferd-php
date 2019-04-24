@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -62,6 +64,7 @@ class LineItem
     public function setLineDocument(LineDocument $lineDocument)
     {
         $this->lineDocument = $lineDocument;
+
         return $this;
     }
 
@@ -81,6 +84,7 @@ class LineItem
     public function setProduct(Product $product)
     {
         $this->product = $product;
+
         return $this;
     }
 
@@ -100,6 +104,7 @@ class LineItem
     public function setTradeAgreement($tradeAgreement)
     {
         $this->tradeAgreement = $tradeAgreement;
+
         return $this;
     }
 
@@ -119,6 +124,7 @@ class LineItem
     public function setDelivery($delivery)
     {
         $this->delivery = $delivery;
+
         return $this;
     }
 
@@ -138,6 +144,7 @@ class LineItem
     public function setSettlement($settlement)
     {
         $this->settlement = $settlement;
+
         return $this;
     }
 }

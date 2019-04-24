@@ -1,5 +1,8 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
 
+namespace Pyrexx\ZUGFeRD\Model\Trade;
+
+use Doctrine\Common\Collections\ArrayCollection;
 use Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -13,7 +16,7 @@ class Trade
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem>")
      * @XmlList(inline = true, entry = "IncludedSupplyChainTradeLineItem", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
-    private $lineItems = array();
+    private $lineItems = [];
 
     /**
      * @var Agreement
@@ -121,5 +124,4 @@ class Trade
         $this->lineItems[] = $lineItem;
         return $this;
     }
-
 }

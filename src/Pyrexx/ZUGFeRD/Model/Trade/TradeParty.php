@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade;
 
 use Pyrexx\ZUGFeRD\Model\Address;
 use Pyrexx\ZUGFeRD\Model\Trade\Tax\TaxRegistration;
@@ -9,7 +11,6 @@ use JMS\Serializer\Annotation\XmlList;
 
 class TradeParty
 {
-
     /**
      * @var string
      * @Type("string")
@@ -17,6 +18,7 @@ class TradeParty
      * @SerializedName("Name")
      */
     private $name;
+
     /**
      * @var Address
      * @Type("Pyrexx\ZUGFeRD\Model\Address")
@@ -24,6 +26,7 @@ class TradeParty
      * @SerializedName("PostalTradeAddress")
      */
     private $address;
+
     /**
      * @var TaxRegistration[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Tax\TaxRegistration>")
@@ -31,7 +34,7 @@ class TradeParty
      */
     private $taxRegistrations;
 
-    public function __construct($name = '', Address $address, array $taxRegistrations = array())
+    public function __construct($name = '', Address $address, array $taxRegistrations = [])
     {
         $this->name = $name;
         $this->address = $address;
@@ -54,6 +57,7 @@ class TradeParty
     public function setName($name)
     {
         $this->name = $name;
+
         return $this;
     }
 
@@ -73,6 +77,7 @@ class TradeParty
     public function setAddress(Address $address)
     {
         $this->address = $address;
+
         return $this;
     }
 
@@ -92,8 +97,7 @@ class TradeParty
     public function addTaxRegistration(TaxRegistration $taxRegistration)
     {
         $this->taxRegistrations[] = $taxRegistration;
+
         return $this;
     }
-
-
 }

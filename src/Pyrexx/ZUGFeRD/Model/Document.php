@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use Pyrexx\ZUGFeRD\Model\Trade\Trade;
 use JMS\Serializer\Annotation\SerializedName;
@@ -11,11 +13,11 @@ use JMS\Serializer\Annotation\XmlRoot;
  * Class Document
  *
  * @XmlRoot("rsm:CrossIndustryInvoice")
-* @XmlNamespace(uri="http://www.w3.org/2001/XMLSchema-instance", prefix="xsi")
-* @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100", prefix="rsm")
-* @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100", prefix="ram")
-* @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100", prefix="udt")
-*/
+ * @XmlNamespace(uri="http://www.w3.org/2001/XMLSchema-instance", prefix="xsi")
+ * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100", prefix="rsm")
+ * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100", prefix="ram")
+ * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100", prefix="udt")
+ */
 class Document
 {
     const TYPE_BASIC = 'BASIC';

@@ -44,7 +44,6 @@
   <xs:complexType name="ExchangedDocumentType">
     <xs:sequence>
       <xs:element name="ID" type="udt:IDType"/>
-      <xs:element name="Name" type="udt:TextType" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="TypeCode" type="qdt:DocumentCodeType"/>
       <xs:element name="IssueDateTime" type="udt:DateTimeType"/>
       <xs:element name="IncludedNote" type="ram:NoteType" minOccurs="0" maxOccurs="unbounded"/>

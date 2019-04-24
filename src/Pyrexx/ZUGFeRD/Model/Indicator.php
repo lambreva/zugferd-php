@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use JMS\Serializer\Annotation as JMS;
 
@@ -42,5 +44,4 @@ class Indicator
     {
         $this->indicator = $indicator;
     }
-
 }

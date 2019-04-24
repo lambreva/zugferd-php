@@ -94,10 +94,10 @@ class BuilderTest extends TestCase
             ->setSeller(
                 new TradeParty('Lieferant GmbH',
                     new Address('80333', 'Lieferantenstraße 20', null, 'München', Country::GERMANY),
-                    array(
+                    [
                         new TaxRegistration(TaxId::FISCAL_NUMBER, '201/113/40209'),
                         new TaxRegistration(TaxId::VAT, 'DE123456789')
-                    )
+                    ]
                 )
             )->setBuyer(
                 new TradeParty('Kunden AG Mitte',

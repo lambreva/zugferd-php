@@ -59,6 +59,4 @@ class UnitCodeHelper
 
         return $unit;
     }
-
-
 }

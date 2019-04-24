@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -28,7 +30,7 @@ class Note
     /**
      * Note constructor.
      *
-     * @param             $content
+     * @param string      $content
      * @param null|string $subjectCode
      */
     public function __construct($content, $subjectCode = null)
@@ -36,7 +38,6 @@ class Note
         $this->setContent($content);
         $this->setSubjectCode($subjectCode);
     }
-
 
     /**
      * @return string
@@ -54,6 +55,7 @@ class Note
     public function setContent($content)
     {
         $this->content = (string)$content;
+
         return $this;
     }
 
@@ -81,7 +83,5 @@ class Note
         }
 
         $this->subjectCode = $subjectCode;
-
     }
-
 }

@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -6,7 +8,6 @@ use JMS\Serializer\Annotation\XmlElement;
 
 class SpecifiedTradeAgreement
 {
-
     /**
      * @var Price
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Price")
@@ -39,6 +40,7 @@ class SpecifiedTradeAgreement
     public function setGrossPrice($grossPrice)
     {
         $this->grossPrice = $grossPrice;
+
         return $this;
     }
 
@@ -58,7 +60,7 @@ class SpecifiedTradeAgreement
     public function setNetPrice($netPrice)
     {
         $this->netPrice = $netPrice;
+
         return $this;
     }
-
 }

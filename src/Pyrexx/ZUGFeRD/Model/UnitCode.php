@@ -1,8 +1,9 @@
-<?php namespace Pyrexx\ZUGFeRD\Model;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model;
 
 class UnitCode
 {
-
     // area units
     const HECTARE = 'HAR';
     const METER = 'MTR';

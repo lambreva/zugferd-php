@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -12,7 +14,6 @@ use JMS\Serializer\Annotation\XmlValue;
  */
 class Amount
 {
-
     /**
      * @var double
      * @Type("double")
@@ -40,7 +41,6 @@ class Amount
         $this->setValue($value, $isSum);
         $this->currency = $currency;
     }
-
 
     /**
      * @return double
@@ -75,6 +75,4 @@ class Amount
     {
         $this->currency = $currency;
     }
-
-
 }

@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Tax;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Tax;
 
 use Pyrexx\ZUGFeRD\Model\Trade\Amount;
 use JMS\Serializer\Annotation as JMS;

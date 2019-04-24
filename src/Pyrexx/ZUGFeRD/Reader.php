@@ -30,6 +30,7 @@ class Reader
         $serializer = SerializerBuilder::create()
             ->setDebug(true)
             ->build();
+
         return new self($serializer);
     }
 }

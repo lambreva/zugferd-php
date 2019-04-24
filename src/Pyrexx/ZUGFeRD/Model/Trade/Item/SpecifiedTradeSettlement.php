@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade\Item;
 
 use Pyrexx\ZUGFeRD\Model\Trade\Tax\TradeTax;
 use JMS\Serializer\Annotation\SerializedName;
@@ -39,6 +41,7 @@ class SpecifiedTradeSettlement
     public function setTradeTax($tradeTax)
     {
         $this->tradeTax = $tradeTax;
+
         return $this;
     }
 
@@ -58,7 +61,7 @@ class SpecifiedTradeSettlement
     public function setMonetarySummation($monetarySummation)
     {
         $this->monetarySummation = $monetarySummation;
+
         return $this;
     }
-
 }

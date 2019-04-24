@@ -1,4 +1,6 @@
-<?php namespace Pyrexx\ZUGFeRD\Model\Trade;
+<?php
+
+namespace Pyrexx\ZUGFeRD\Model\Trade;
 
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
@@ -58,6 +60,7 @@ class PaymentMeans
     public function setCode($code)
     {
         $this->code = $code;
+
         return $this;
     }
 
@@ -77,6 +80,7 @@ class PaymentMeans
     public function setInformation($information)
     {
         $this->information = $information;
+
         return $this;
     }
 
@@ -96,6 +100,7 @@ class PaymentMeans
     public function setPayeeAccount(CreditorFinancialAccount $payeeAccount)
     {
         $this->payeeAccount = $payeeAccount;
+
         return $this;
     }
 
@@ -115,8 +120,7 @@ class PaymentMeans
     public function setPayeeInstitution($payeeInstitution)
     {
         $this->payeeInstitution = $payeeInstitution;
+
         return $this;
     }
-
-
 }
