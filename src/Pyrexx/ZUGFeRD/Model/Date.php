@@ -7,6 +7,11 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use Pyrexx\ZUGFeRD\CodeList\DateFormat;
 
+/**
+ * Class Date
+ *
+ * @package Pyrexx\ZUGFeRD\Model
+ */
 class Date
 {
     /**

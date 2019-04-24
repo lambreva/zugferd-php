@@ -7,6 +7,11 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use Pyrexx\ZUGFeRD\CodeList\Currency;
 
+/**
+ * Class MonetarySummation
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class MonetarySummation
 {
     /**
@@ -14,7 +19,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("LineTotalAmount")
      */
     private $lineTotal;
@@ -24,7 +29,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ChargeTotalAmount")
      */
     private $chargeTotal;
@@ -34,7 +39,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("AllowanceTotalAmount")
      */
     private $allowanceTotal;
@@ -44,7 +49,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("TaxBasisTotalAmount")
      */
     private $taxBasisTotal;
@@ -54,7 +59,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("TaxTotalAmount")
      */
     private $taxTotal;
@@ -64,7 +69,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("GrandTotalAmount")
      */
     private $grandTotal;
@@ -74,7 +79,7 @@ class MonetarySummation
      *
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("DuePayableAmount")
      */
     private $duePayableAmount;

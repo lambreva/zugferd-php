@@ -8,12 +8,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class SpecifiedTradeMonetarySummation
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Item
+ */
 class SpecifiedTradeMonetarySummation
 {
     /**
      * @var Amount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("LineTotalAmount")
      */
     private $totalAmount;

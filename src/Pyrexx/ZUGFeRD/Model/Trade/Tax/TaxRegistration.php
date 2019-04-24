@@ -6,12 +6,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class TaxRegistration
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Tax
+ */
 class TaxRegistration
 {
     /**
      * @var Registration
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Tax\Registration")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ID")
      */
     private $registration;

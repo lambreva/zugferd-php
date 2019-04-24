@@ -7,6 +7,11 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlAttribute;
 use JMS\Serializer\Annotation\XmlValue;
 
+/**
+ * Class Registration
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Tax
+ */
 class Registration
 {
     /**

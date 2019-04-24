@@ -7,12 +7,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class DeliveryChainEvent
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class DeliveryChainEvent
 {
     /**
      * @var Date
      * @Type("Pyrexx\ZUGFeRD\Model\Date")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("OccurrenceDateTime")
      */
     private $date;

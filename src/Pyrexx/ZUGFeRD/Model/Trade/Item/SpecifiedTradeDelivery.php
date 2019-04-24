@@ -6,12 +6,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class SpecifiedTradeDelivery
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Item
+ */
 class SpecifiedTradeDelivery
 {
     /**
      * @var Quantity
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\Quantity")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BilledQuantity")
      */
     private $billedQuantity;

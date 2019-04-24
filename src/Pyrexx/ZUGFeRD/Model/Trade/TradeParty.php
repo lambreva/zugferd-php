@@ -9,12 +9,17 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use JMS\Serializer\Annotation\XmlList;
 
+/**
+ * Class TradeParty
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class TradeParty
 {
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("Name")
      */
     private $name;
@@ -22,7 +27,7 @@ class TradeParty
     /**
      * @var Address
      * @Type("Pyrexx\ZUGFeRD\Model\Address")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PostalTradeAddress")
      */
     private $address;
@@ -30,7 +35,7 @@ class TradeParty
     /**
      * @var TaxRegistration[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Tax\TaxRegistration>")
-     * @XmlList(inline = true, entry = "SpecifiedTaxRegistration", namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlList(inline=true, entry="SpecifiedTaxRegistration", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $taxRegistrations;
 

@@ -2,7 +2,11 @@
 
 namespace Pyrexx\ZUGFeRD;
 
-
+/**
+ * Class SchemaValidator
+ *
+ * @package Pyrexx\ZUGFeRD
+ */
 class SchemaValidator
 {
     /**

@@ -2,26 +2,30 @@
 
 namespace Pyrexx\ZUGFeRD\Model\Trade;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use JMS\Serializer\Annotation\XmlList;
 
+/**
+ * Class Trade
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class Trade
 {
     /**
      * @var LineItem[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Item\LineItem>")
-     * @XmlList(inline = true, entry = "IncludedSupplyChainTradeLineItem", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlList(inline=true, entry="IncludedSupplyChainTradeLineItem", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $lineItems = [];
 
     /**
      * @var Agreement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Agreement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ApplicableHeaderTradeAgreement")
      */
     private $agreement;
@@ -29,7 +33,7 @@ class Trade
     /**
      * @var Delivery
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Delivery")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ApplicableHeaderTradeDelivery")
      */
     private $delivery;
@@ -37,11 +41,14 @@ class Trade
     /**
      * @var Settlement
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Settlement")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ApplicableHeaderTradeSettlement")
      */
     private $settlement;
 
+    /**
+     * Trade constructor.
+     */
     public function __construct()
     {
         $this->agreement = new Agreement();

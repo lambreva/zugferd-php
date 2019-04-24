@@ -6,6 +6,11 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class DocumentContext
+ *
+ * @package Pyrexx\ZUGFeRD\Model
+ */
 class DocumentContext
 {
     /**
@@ -16,9 +21,13 @@ class DocumentContext
      */
     private $type;
 
-    public function __construct($type)
+    /**
+     * DocumentContext constructor.
+     *
+     * @param string $type
+     */
+    public function __construct(string $type)
     {
-        //todo: check type
-        $this->type = new ContextParameterID('urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100:' . strtolower($type));
+        $this->type = new ContextParameterID($type);
     }
 }

@@ -13,7 +13,7 @@ class TradeTax
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("CalculatedAmount")
      */
     private $calculatedAmount;
@@ -21,7 +21,7 @@ class TradeTax
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("TypeCode")
      */
     private $code = '';
@@ -29,7 +29,7 @@ class TradeTax
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("BasisAmount")
      */
     private $basisAmount;
@@ -37,7 +37,7 @@ class TradeTax
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("CategoryCode")
      */
     private $category;
@@ -45,7 +45,7 @@ class TradeTax
     /**
      * @var double
      * @JMS\Type("double")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("RateApplicablePercent")
      */
     private $percent;

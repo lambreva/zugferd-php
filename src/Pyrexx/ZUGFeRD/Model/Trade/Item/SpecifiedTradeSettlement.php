@@ -7,12 +7,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class SpecifiedTradeSettlement
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Item
+ */
 class SpecifiedTradeSettlement
 {
     /**
      * @var TradeTax
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Tax\TradeTax")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ApplicableTradeTax")
      */
     private $tradeTax;
@@ -20,7 +25,7 @@ class SpecifiedTradeSettlement
     /**
      * @var SpecifiedTradeMonetarySummation
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Item\SpecifiedTradeMonetarySummation")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("SpecifiedTradeSettlementLineMonetarySummation")
      */
     private $monetarySummation;

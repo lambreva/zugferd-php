@@ -5,12 +5,17 @@ namespace Pyrexx\ZUGFeRD\Model\Trade;
 use Pyrexx\ZUGFeRD\Model\Date;
 use JMS\Serializer\Annotation as JMS;
 
+/**
+ * Class PaymentTerms
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class PaymentTerms
 {
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("Description")
      */
     private $description;
@@ -18,7 +23,7 @@ class PaymentTerms
     /**
      * @var Date
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Date")
-     * @JMS\XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("DueDateDateTime")
      */
     private $dueDate;

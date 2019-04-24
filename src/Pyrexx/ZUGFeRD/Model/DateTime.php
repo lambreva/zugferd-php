@@ -5,6 +5,11 @@ namespace Pyrexx\ZUGFeRD\Model;
 use JMS\Serializer\Annotation as JMS;
 use Pyrexx\ZUGFeRD\CodeList\DateFormat;
 
+/**
+ * Class DateTime
+ *
+ * @package Pyrexx\ZUGFeRD\Model
+ */
 class DateTime
 {
     /**

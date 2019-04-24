@@ -7,12 +7,17 @@ use Pyrexx\ZUGFeRD\Model\AllowanceCharge;
 use Pyrexx\ZUGFeRD\Model\Trade\Amount;
 use JMS\Serializer\Annotation as JMS;
 
+/**
+ * Class Price
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Item
+ */
 class Price
 {
     /**
      * @var Amount
      * @JMS\Type("Pyrexx\ZUGFeRD\Model\Trade\Amount")
-     * @JMS\XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @JMS\SerializedName("ChargeAmount")
      */
     private $amount;
@@ -20,7 +25,7 @@ class Price
     /**
      * @var AllowanceCharge[]
      * @JMS\Type("array<Pyrexx\ZUGFeRD\Model\AllowanceCharge>")
-     * @JMS\XmlList(inline = true, entry = "AppliedTradeAllowanceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @JMS\XmlList(inline=true, entry="AppliedTradeAllowanceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $allowanceCharges = [];
 

@@ -18,7 +18,7 @@ class Settlement
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PaymentReference")
      */
     private $paymentReference;
@@ -26,7 +26,7 @@ class Settlement
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("InvoiceCurrencyCode")
      */
     private $currency;
@@ -34,7 +34,7 @@ class Settlement
     /**
      * @var PaymentMeans
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\PaymentMeans")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("SpecifiedTradeSettlementPaymentMeans")
      */
     private $paymentMeans;
@@ -42,25 +42,25 @@ class Settlement
     /**
      * @var TradeTax[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Trade\Tax\TradeTax>")
-     * @XmlList(inline = true, entry = "ApplicableTradeTax", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlList(inline=true, entry="ApplicableTradeTax", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $tradeTaxes = [];
 
     /**
-     * @var MonetarySummation
-     * @Type("Pyrexx\ZUGFeRD\Model\Trade\MonetarySummation")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
-     * @SerializedName("SpecifiedTradeSettlementHeaderMonetarySummation")
-     */
-    private $monetarySummation;
-
-    /**
      * @var PaymentTerms
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\PaymentTerms")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("SpecifiedTradePaymentTerms")
      */
     private $paymentTerms;
+
+    /**
+     * @var MonetarySummation
+     * @Type("Pyrexx\ZUGFeRD\Model\Trade\MonetarySummation")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("SpecifiedTradeSettlementHeaderMonetarySummation")
+     */
+    private $monetarySummation;
 
     /**
      * Settlement constructor.

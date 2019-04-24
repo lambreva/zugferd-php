@@ -6,12 +6,17 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class Agreement
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class Agreement
 {
     /**
      * @var TradeParty
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\TradeParty")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("SellerTradeParty")
      */
     private $seller;
@@ -19,7 +24,7 @@ class Agreement
     /**
      * @var TradeParty
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\TradeParty")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BuyerTradeParty")
      */
     private $buyer;

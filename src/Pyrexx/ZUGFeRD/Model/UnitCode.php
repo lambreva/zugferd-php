@@ -2,6 +2,11 @@
 
 namespace Pyrexx\ZUGFeRD\Model;
 
+/**
+ * Class UnitCode
+ *
+ * @package Pyrexx\ZUGFeRD\Model
+ */
 class UnitCode
 {
     // area units

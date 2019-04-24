@@ -6,6 +6,11 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class CreditorFinancialAccount
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class CreditorFinancialAccount
 {
     /**
@@ -13,7 +18,7 @@ class CreditorFinancialAccount
      *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("IBANID")
      */
     private $iban;
@@ -21,7 +26,7 @@ class CreditorFinancialAccount
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("AccountName")
      */
     private $accountName;
@@ -29,7 +34,7 @@ class CreditorFinancialAccount
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ProprietaryID")
      */
     private $proprietary;

@@ -8,12 +8,17 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use JMS\Serializer\Annotation\XmlList;
 
+/**
+ * Class LineDocument
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade\Item
+ */
 class LineDocument
 {
     /**
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("LineID")
      */
     private $lineId;
@@ -21,7 +26,7 @@ class LineDocument
     /**
      * @var Note[]
      * @Type("array<Pyrexx\ZUGFeRD\Model\Note>")
-     * @XmlList(inline = true, entry = "IncludedNote", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlList(inline=true, entry="IncludedNote", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     private $notes = [];
 

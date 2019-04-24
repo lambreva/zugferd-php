@@ -6,6 +6,11 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class CreditorFinancialInstitution
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class CreditorFinancialInstitution
 {
     /**
@@ -13,7 +18,7 @@ class CreditorFinancialInstitution
      *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BICID")
      */
     private $bic;

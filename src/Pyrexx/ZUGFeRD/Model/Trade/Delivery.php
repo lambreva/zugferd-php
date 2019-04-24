@@ -7,12 +7,17 @@ use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 use Pyrexx\ZUGFeRD\CodeList\DateFormat;
 
+/**
+ * Class Delivery
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class Delivery
 {
     /**
      * @var DeliveryChainEvent
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\DeliveryChainEvent")
-     * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("ActualDeliverySupplyChainEvent")
      */
     private $chainEvent;

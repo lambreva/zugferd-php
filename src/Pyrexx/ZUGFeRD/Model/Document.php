@@ -13,15 +13,19 @@ use JMS\Serializer\Annotation\XmlRoot;
  * Class Document
  *
  * @XmlRoot("rsm:CrossIndustryInvoice")
- * @XmlNamespace(uri="http://www.w3.org/2001/XMLSchema-instance", prefix="xsi")
+ * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:100", prefix="a")
  * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100", prefix="rsm")
+ * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:10", prefix="qdt")
  * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100", prefix="ram")
+ * @XmlNamespace(uri="http://www.w3.org/2001/XMLSchema", prefix="xs")
  * @XmlNamespace(uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100", prefix="udt")
  */
 class Document
 {
+    const TYPE_MINIMUM = 'MINIMUM';
+    const TYPE_BASIC_WL = 'BASIC WL';
     const TYPE_BASIC = 'BASIC';
-    const TYPE_COMFORT = 'COMFORT';
+    const TYPE_COMFORT = 'EN 16931';
     const TYPE_EXTENDED = 'EXTENDED';
 
     /**
@@ -41,11 +45,16 @@ class Document
     /**
      * @var Trade
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\Trade")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100")
      * @SerializedName("SupplyChainTradeTransaction")
      */
     private $trade;
 
+    /**
+     * Document constructor.
+     *
+     * @param string $type
+     */
     public function __construct($type = self::TYPE_BASIC)
     {
         $this->context = new DocumentContext($type);

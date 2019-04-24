@@ -6,40 +6,41 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
 
+/**
+ * Class PaymentMeans
+ *
+ * @package Pyrexx\ZUGFeRD\Model\Trade
+ */
 class PaymentMeans
 {
     /**
-     *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("TypeCode")
      */
     private $code = '';
 
     /**
-     *
      * @var string
      * @Type("string")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("Information")
      */
     private $information = '';
 
     /**
-     *
      * @var CreditorFinancialAccount
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\CreditorFinancialAccount")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PayeePartyCreditorFinancialAccount")
      */
     private $payeeAccount;
 
     /**
-     *
      * @var CreditorFinancialInstitution
      * @Type("Pyrexx\ZUGFeRD\Model\Trade\CreditorFinancialInstitution")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @XmlElement(cdata=false, namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("PayeeSpecifiedCreditorFinancialInstitution")
      */
     private $payeeInstitution;
